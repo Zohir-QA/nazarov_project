@@ -1,22 +1,3 @@
-# 1 Задание
-# number = int(input("Введите число: "))
-# if number % 2 == 0:
-#     print("Even number")
-# else:
-#     print("Odd number")
-# 2 Задание
-# number = int(input("Введите число: "))
-# if number % 7 == 0:
-#     print("Number is multiple 7")
-# else:
-#     print("Number is not multiple 7")
-# 3 Задание
-# my_number_1 = int(input("Введите число 1:"))
-# my_number_2 = int(input("Введите число 2:"))
-# if my_number_1 > my_number_2:
-#     print("Максимальное: ", my_number_1)
-# else:
-#     print("Максимальное: ", my_number_2)
 # 4 Задание
 # my_number_1 = int(input("Введите число 1:"))
 # my_number_2 = int(input("Введите число 2:"))
