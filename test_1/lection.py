@@ -104,3 +104,26 @@
 #     print("Number is multiple 7")
 # else:
 #     print("Number is not multiple 7")
+#
+# a = 123456
+# a1 = 123456 % 10
+# b = a % 100
+# b1 = b // 10
+# v = a % 10000
+# v1 = v // 1000
+# print(a1,b1,v1)
+# тернарный оператор
+# a = False
+# b = 100 if a == True else 1000
+# print(b)
+
+
+
+
+
+
+
+
+
+
+
