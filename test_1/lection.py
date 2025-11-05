@@ -97,6 +97,7 @@
 #     print("Number is multiple 7")
 # else:
 #     print("Number is not multiple 7")
+from itertools import count
 
 # my_number_1 = int(input("Введите число 1:"))
 # my_number_2 = int(input("Введите число 2:"))
@@ -116,6 +117,115 @@
 # a = False
 # b = 100 if a == True else 1000
 # print(b)
+#
+# print(bool(0)) #fols нулевое значение
+# print(bool("")) # bool() - проверяет правда или лож
+# print(bool(None))
+# print(bool([]))
+# print(bool({}))
+# print(bool(())) # TUPL - кортеж
+#
+# while <логическая консрукция>:
+#     <логика>
+#     <логика>
+#     ...
+#
+# while True:
+#     print("Мы на уроке по python")
+#
+# counter = 5
+# while counter != 0:
+#     print("Мы на уроке по python")
+#     counter = counter-1
+#
+# counter = 5
+# while counter:
+#     print("Мы на уроке по python")
+#     counter = counter-1
+#1
+# my_number_1 = int(input("Введите число: "))
+# counter = 1
+# while counter != my_number_1+1:
+#      print(counter)
+#      counter = (counter+1)
+#2
+# my_number_1 = int(input("Введите число: "))
+# counter = 1
+# counter1 = 0
+# while counter != my_number_1+1:
+#     counter1 = counter + counter1
+#     counter = (counter+1)
+# print(counter1)
+#
+# for - цикл используется для перебора иэлементов в некоторой последовательности или итерируемого объекта
+# for <переменая> in <последовательность>:
+#     логика_1
+#     логика_1
+#     ...
+#
+# range(10)
+#
+# for numb in range(1, 11, "nun", "pop")
+#     print(numb)
+#
+# i = 0
+# while i < 11:
+#     print(i)
+#     i += 1
+#
+# for i in range(11):
+#     print(i)
+#
+# print(range(10))
+#
+# for i in range(1, 100, 2):
+#     print(i)
+#
+# val = "Python"
+# val_2 = ""
+# for i in val:
+#     val_2 += i
+# print(val_2)
+#
+# break
+#
+var = "Hello, its a break"
+for i in [1,2,3,52,2,3]:
+    print(i)
+    if i == 52:
+        break
+print(var)
+#
+# my_number_1 = int(input("Введите число: "))
+# counter = 1
+# while counter != my_number_1+1:
+#      print(counter)
+#      counter = (counter+1)
+# my_number_1 = int(input("Введите число: "))
+# for i in range (1, my_number_1+1):
+#     print(i)
+# 3
+# my_number_1 = int(input("Введите число: "))
+# for i in range (1, my_number_1+1):
+#     print(i)
+#
+# continue
+#
+# for i in range(1,101):
+#     if i % 2 == 0:
+#         continue
+#     print(i)
+#
+# numbers = [1, 3, 5, 8, 9, 10]
+# for num in numbers:
+#     print(num)
+#     if num == 7:
+#         print("Ура, мы нашли число 7")
+#         break
+# else:
+#     print("К сожалению числа 7 там нет")
+#
+# pass - заглушка в коде
 
 
 
