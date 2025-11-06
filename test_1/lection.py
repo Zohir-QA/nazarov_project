@@ -189,12 +189,12 @@ from itertools import count
 #
 # break
 #
-var = "Hello, its a break"
-for i in [1,2,3,52,2,3]:
-    print(i)
-    if i == 52:
-        break
-print(var)
+# var = "Hello, its a break"
+# for i in [1,2,3,52,2,3]:
+#     print(i)
+#     if i == 52:
+#         break
+# print(var)
 #
 # my_number_1 = int(input("Введите число: "))
 # counter = 1
