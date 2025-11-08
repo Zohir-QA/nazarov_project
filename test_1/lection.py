@@ -97,8 +97,8 @@
 #     print("Number is multiple 7")
 # else:
 #     print("Number is not multiple 7")
-from itertools import count
-
+# from itertools import count
+#
 # my_number_1 = int(input("Введите число 1:"))
 # my_number_2 = int(input("Введите число 2:"))
 # if number % 7 == 0:
