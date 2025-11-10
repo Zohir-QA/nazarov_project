@@ -226,6 +226,51 @@
 #     print("К сожалению числа 7 там нет")
 #
 # pass - заглушка в коде
+#
+# строки, масивы, списки
+# string - тип данных, символы
+# string = "/.fhhfhfhfh"
+# print(string)
+# encode_string = string.encode("utf-16")
+# print(encode_string)
+#
+# string = "/.fhhfhfhfh"
+# print(id(string))
+#
+from tkinter.font import names
+#
+string = "/.fhhfhfhfh"
+string_2 = "fjfjfjhj"
+# print(string + string_2 * 5)
+#
+# index = [0][1][2][3]
+#
+# print(string[-1])
+# for i in range(0, len(string)+1)
+#     if string[i] == "o":
+#         print("Мы нашли букву О")
+#
+# name = "petr"
+# val = f"Меня зовут: {name}"
+# print(val)
+#
+# Методы изменения регистра строк
+# print(f"1. {string_2.capitalize()}") # - переводит первый символ в верхний регистр, остальное в нижний
+# print(f"2. {string_2.lower()}") # - переводит все в нижний регистр
+# print(f"3. {string_2.upper()}") # - переводит все в верхний регистр
+# print(f"4. {string_2.title()}") # - переводит первые буквы каждого слова в верхний регистр
+# print(f"5. {string_2.swapcase()}") # - меняет верхний регистр на нижний и нижний на верхний
+#
+# Методы проверки строк
+print(f"1. {string_2.isalnum()}") # - проверяет состоит ли строка только из цифр и букв
+print(f"2. {string_2.isalpha()}") # - проверяет состоит ли строка только из букв
+print(f"3. {string_2.isdigit()}") # - проверяет состоит ли строка только из цифр
+print(f"4. {string_2.islower()}") # - проверяет на нижний регистр
+print(f"5. {string_2.isupper()}") # - проверяет на верхний регистр
+print(f"6. {string_2.isspace()}") # - проверяет что строка не состоит из пробелов
+print(f"7. {string_2.istitle()}") # - проверяет что у каждого слова первая буква в верхнем регистре
+#
+
 
 
 
