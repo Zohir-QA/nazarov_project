@@ -239,8 +239,8 @@
 #
 from tkinter.font import names
 #
-string = "/.fhhfhfhfh"
-string_2 = "fjfjfjhj"
+# string = "/.fhhfhfhfh"
+# string_2 = "fjfjfjhj"
 # print(string + string_2 * 5)
 #
 # index = [0][1][2][3]
@@ -262,20 +262,132 @@ string_2 = "fjfjfjhj"
 # print(f"5. {string_2.swapcase()}") # - меняет верхний регистр на нижний и нижний на верхний
 #
 # Методы проверки строк
-print(f"1. {string_2.isalnum()}") # - проверяет состоит ли строка только из цифр и букв
-print(f"2. {string_2.isalpha()}") # - проверяет состоит ли строка только из букв
-print(f"3. {string_2.isdigit()}") # - проверяет состоит ли строка только из цифр
-print(f"4. {string_2.islower()}") # - проверяет на нижний регистр
-print(f"5. {string_2.isupper()}") # - проверяет на верхний регистр
-print(f"6. {string_2.isspace()}") # - проверяет что строка не состоит из пробелов
-print(f"7. {string_2.istitle()}") # - проверяет что у каждого слова первая буква в верхнем регистре
+# print(f"1. {string_2.isalnum()}") # - проверяет состоит ли строка только из цифр и букв
+# print(f"2. {string_2.isalpha()}") # - проверяет состоит ли строка только из букв
+# print(f"3. {string_2.isdigit()}") # - проверяет состоит ли строка только из цифр
+# print(f"4. {string_2.islower()}") # - проверяет на нижний регистр
+# print(f"5. {string_2.isupper()}") # - проверяет на верхний регистр
+# print(f"6. {string_2.isspace()}") # - проверяет что строка не состоит из пробелов
+# print(f"7. {string_2.istitle()}") # - проверяет что у каждого слова первая буква в верхнем регистре
 #
-
-
-
-
-
-
+# val_str = "Привет"
+# val_int = 10
+# val_float = 10.0
+# val_tuple = (1, 2, 3) # можно изменять
+# val_list = [1, 2, 3] # можно изменять
+# val_dict = {"key": "value"}
+#
+# print(id(val_int))
+# val_list.append(4)
+# print(id(val_int))
+#
+## обьектно передаются видно не изменемые виды даных а ссылочно изменямые
+#
+# стрез строки (slice)
+#
+# a = """
+# dgdgdfgdfgdfgd "dfgdfgd", "dgdg"
+# """
+# print(a)
+#
+# строка[начало:конец]
+#
+# val_str = "Привет"
+# print(val_str[:3])
+# print(val_str[1:3])
+# print(val_str[3:])
+# val_str = "Hello World!"
+# print(val_str[2:-1])
+#
+# строка[начало:конец] [start:stop:step]
+#
+# val_str = "123456789"
+# print(val_str[::-1]) # как перевнуть строку (задом на перед) (инвертирование)
+#
+# val_int = "123456789"
+# print(val_int[2:8:2])
+# print(val_int[8:2:-2])
+#
+# val_str = "Hello World!"
+# print("Python" in val_str) # проверка
+#
+# s = "AB"
+# S = S * 2 + "CD"
+# print(s)
+#
+# age = input()
+# print(type(age))
+#
+# text = input() # проверка является слово палиандром
+# text = text.lower()
+#
+# if text == text[::-1]
+#     print("это палиандром")
+# else:
+#     print("Это не палиандром")
+#
+# name = input("Введите имя: ")
+# len_name = len(name)
+# print("*" * (len_name + 4))
+# print("* "+name+" *")
+# print("*" * (len_name + 4))
+#
+# val_list = [1, "int", 3.0, True, [1, 2]]
+#список или (лист) изменяемая упорядочная колекция обьектов с произвольным типом данных
+#
+# a = "Hello World"
+# a_list = list(a)
+# print(a_list)
+# print(type(a_list))
+# a_list = list(range(1, 10))
+# b = [] # создать пустой список
+# b = list() # создать пустой список
+# print(b)
+#
+fruits = ["яблоко", "апельсин", "банана", "нанасий"] # изменить индекс
+# fruits[2] = ["Банан"]
+# print(fruits)
+# print(id(fruits))
+#
+# fruits.append("помидор")# добавляет слово
+# print(fruits)
+#
+# fruits.insert(0,"вишня")
+# print(fruits)
+#
+# a = ["a", "b"]
+# b = "привет"
+# fruits.extend(a)
+# print(fruits)
+# print(id(fruits))
+# print(fruits*2)
+#
+# fruits.remove("яблоко")
+# print(fruits)
+#
+# fruits.pop()
+# print(fruits)
+#
+# del fruits[:2]
+# print(fruits)
+#
+# fruits.clear()
+# print(fruits)
+#
+# value = input()
+# if value in fruits:
+#     print("яблоко это фрукт")
+#
+# matrix = [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+# matrix.append([1, 2, 3])
+# print(matrix)
+#
+spisok = [1,2,3,4,5,6,7,8,9]
+spisok.remove(1)
+spisok.remove(9)
+spisok.append(5)
+spisok.insert(0,5)
+print(spisok)
 
 
 
