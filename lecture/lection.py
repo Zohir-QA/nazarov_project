@@ -237,7 +237,7 @@
 # string = "/.fhhfhfhfh"
 # print(id(string))
 #
-from tkinter.font import names
+# from tkinter.font import names
 #
 # string = "/.fhhfhfhfh"
 # string_2 = "fjfjfjhj"
@@ -382,7 +382,7 @@ fruits = ["яблоко", "апельсин", "банана", "нанасий"] 
 # matrix.append([1, 2, 3])
 # print(matrix)
 #
-spisok = [1,2,3,4,5,6,7,8,9]
+spisok = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 spisok.remove(1)
 spisok.remove(9)
 spisok.append(5)
