@@ -344,7 +344,7 @@
 # b = list() # создать пустой список
 # print(b)
 #
-fruits = ["яблоко", "апельсин", "банана", "нанасий"] # изменить индекс
+# fruits = ["яблоко", "апельсин", "банана", "нанасий"] # изменить индекс
 # fruits[2] = ["Банан"]
 # print(fruits)
 # print(id(fruits))
@@ -382,14 +382,74 @@ fruits = ["яблоко", "апельсин", "банана", "нанасий"] 
 # matrix.append([1, 2, 3])
 # print(matrix)
 #
-spisok = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-spisok.remove(1)
-spisok.remove(9)
-spisok.append(5)
-spisok.insert(0,5)
-print(spisok)
-
-
+# spisok = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# spisok.remove(1)
+# spisok.remove(9)
+# spisok.append(5)
+# spisok.insert(0,5)
+# print(spisok)
+#
+# """strings_and_lists"""
+#
+# list2 = list [:] # - копия списка
+#
+# перация со списками
+#
+# list3 = list + list2
+# print(lost3) # объединение списков
+#
+# print (list3 * 3) # умножение списков
+#
+# print("text" in list3) # проверка вхождения
+#
+# included_list = [[1, 2, 3, 4], ["текст1", "текст2"]]# вложенные списки
+# print(included_list[0][1])
+# for i in included_list:
+#     for subject in i:
+#
+#  """Методы списков"""
+#
+# my_list = []
+# my_list.append("Мы учим Python") # добавление в конец списка
+# print(my_list)
+#
+# my_list.extend([1, 2, 3]) # расширение списка
+# print(my_list)
+#
+# my_list.insert(0,"Сегодня") # вставка по индексу
+# print(my_list)
+#
+# my_list.remove(1) # удаление объекта
+# print(my_list)
+#
+# my_list.pop(0) # удаление по индексу
+# print(my_list)
+#
+# my_list.clear() # чистка списка
+#
+# val = my_list.count() # подсчет вхождения элемента в списке
+# print(val)
+#
+# my_list1 = [1, 5, 6, 3, 7, 455, 323, 11, 146]
+# my_list.sort(reverse=True) # сортировка списка
+# print(my_list)
+#
+# my_list1.reverse() # перевернуть список
+# print(my_list1)
+#
+# counter = 0
+# while counter < len(my_list1): # перебор списка
+#     print(my_list1[counter])
+#     counter +=1
+#
+# while counter < len(my_list1):
+#     val = my_list1[counter]
+#     if val == 324:
+#         print("Мы нашли число 323")
+#         break
+#     counter +=1
+#
+# text.replace(1,1) # замена
 
 
 
