@@ -38,7 +38,7 @@
 # counter = text.count(text_2)
 # print(counter)
 # 3
-number = input("Введите шестизначное число: ").split()
+number = input("Введите целые числа через пробел: ").split()
 number_1 = []
 for i in number:
     number_1.append(int(i))
