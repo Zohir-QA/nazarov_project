@@ -33,8 +33,18 @@
 # print("Измененный текст:", val, sep="")
 # print("\nЦифры встречаются в тексте:", text_2, "\nЗнаки препинания встречаются:", text_3, "\nВосклицательных знаков:", text_4)
 # 2
-text = input("Введите элементы списка целых: ")
-text_2 = input("Введите некоторое число: ")
-counter = text.count(text_2)
-print(counter)
+# text = input("Введите элементы списка через пробел: ").split()
+# text_2 = input("Введите некоторое число для поиска: ")
+# counter = text.count(text_2)
+# print(counter)
 # 3
+number = input("Введите шестизначное число: ").split()
+number_1 = []
+for i in number:
+    number_1.append(int(i))
+total = 0
+for i in number_1:
+    total += i
+average = total / len(number)
+print("Сумма элементов:", total)
+print("Среднее арифметическое:", average)
