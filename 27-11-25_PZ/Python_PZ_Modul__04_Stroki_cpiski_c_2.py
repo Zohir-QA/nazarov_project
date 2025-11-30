@@ -29,7 +29,6 @@
 #     print(int(num) / int(num_2))
 # 2
 import random
-# val= random.randint(-100,100)
 count = 0
 mu_list = []
 while count < 10:
@@ -37,17 +36,18 @@ while count < 10:
     mu_list.append(val)
     count +=1
 print(mu_list)
-# list = [41, 24, 15, 6, 20, -10, 48, -23, 31, -25, 30, -14, 1, 7, 15, 40, 34, 47, 14, -21, 0]
-# number_max = max(list)
-# number_min = min(list)
-# nul = list.count(0)
-# plus = []
-# for i in list:
-#     if i < 0:
-#         plus.append(i)
-# minus = []
-# for i in list:
-#     if i > 0:
-#         minus.append(i)
-# print(f"Минимальное - {number_max} и максимальное - {number_min} элементы")
-# print()
+number_max = max(mu_list)
+number_min = min(mu_list)
+nul = mu_list.count(0)
+plus = []
+for i in mu_list:
+    if i < 0:
+        plus.append(i)
+minus = []
+for i in mu_list:
+    if i > 0:
+        minus.append(i)
+print(f"Минимальное {number_max} и максимальное {number_min} элементы")
+print("Отрицательные элементы:", number_max)
+print("Положительные элементы:", number_min)
+print("Количество нулей:", nul)
