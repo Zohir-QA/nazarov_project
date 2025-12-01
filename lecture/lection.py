@@ -622,12 +622,49 @@
 # val = some_function(15)
 # print(val)
 #
-global_value = 0
+# global_value = 0
+#
+# def some_function(number_1, number_2):
+#     a = number_1 + number_2
+#
+# val = some_function(40)
+#
+# модули в paython и что такое
+#
+# это обычные файлы с расширением .pau
+#
+# import math
+# import sys
+# import os
+# from datetime import datetime
+# pi = 3.141592
+# print(math.tau)
+# print(pi)
+# # пространство имен это отдельная область где находится все именна объекта, каждый модуль имеет собственное пространство имен
+# print(sys.modules)
 
-def some_function(number_1, number_2):
-    a = number_1 + number_2
+# from mathematic.calculator.summ import sum as plus # вызвали из папки)
+# from mathematic.calculator.summ import * # импортируем все
+# def sum():
+#     print(2+2)
+# sum()
+# plus()
+#
+# import greetings
+# greetings.say_hello()
+#
+# if __name__ == "__main__": # используется как галовной и его нельзя использовать
+#     print("module greetings.py")
 
-val = some_function(40)
+# mvnrepository - различные библиотеки для пайтона
+# sys.path.append("C:\\Users\\student.IT\\my_new_module")
+# print("\n".join(sys.path)) # входит состав к библиотекам пайтона, входит путь
+# import my_new_module
+# my_new_module.
+#
+# пакеты - это папки с модулями
+# функций - print
+#
 
 
 
