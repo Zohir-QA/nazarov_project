@@ -32,11 +32,26 @@
 #     print(val)
 # summ_number(1, 10)
 # 6
-def prostoe_number(number_1):
-    if number_1 <= 1:
-        return False
-    if number_1 == 2:
+# def prost_number(number_1):
+#     if number_1 < 2:
+#         return False
+#     if number_1 == 2:
+#         return True
+#     if number_1 % 2 == 0:
+#         return False
+#     for i in range(3, int(number_1 ** 0.5) + 1, 2):
+#         if number_1 % i == 0:
+#             return False
+#     return True
+# print(prost_number(2))
+# 7
+def number_lucky(number):
+    number_1 = str(number // 1000)
+    number_2 = str(number % 1000)
+    sum_1 = int(number_1[0]) + int(number_1[1]) + int(number_1[2])
+    sum_2 = int(number_2[0]) + int(number_2[1]) + int(number_2[2])
+    if sum_1 == sum_2:
         return True
-    if number_1 % 2 == 0:
+    else:
         return False
-prostoe_number(1)
+print(number_lucky(123420))
