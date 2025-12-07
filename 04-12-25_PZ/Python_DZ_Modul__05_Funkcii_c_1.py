@@ -19,18 +19,35 @@
 #
 # my_number = input("Введите числа через пробел: ").split( )
 # function_min(my_number)
+#
 # 5
-def range_limits(range_1, range_2):
-    val_1 = max(range_1, range_2)
-    val_2 = min(range_1, range_2)
-    print(f"Верхняя граница - {val_1}, а нижняя граница равна - {val_2}")
+# def range_limits(range_1, range_2):
+#     val_max = max(range_1, range_2)
+#     val_min = min(range_1, range_2)
+#     print(f"Верхняя граница - {val_max}, а нижняя граница равна - {val_min}")
+#
+# number_1 = int(input("Введите первое число диапазона: "))
+# number_2 = int(input("Введите второе число диапазона: "))
+# range_limits(number_1 , number_2)
+#
+# 6
+# def count_digits(number):
+#     val = abs(number)
+#     val_count = len(str(val))
+#     return val_count
+#
+# print(count_digits(-3456))
+#
+# 7
+def palindrome(text):
+    text = text.lower()
+    if text == text[::-1]:
+        print("Это палиандром")
+    else:
+        print("Это не палиандром")
 
-number_1 = int(input("Введите первое число диапазона: "))
-number_2 = int(input("Введите второе число диапазона: "))
-range_limits(number_1 , number_2)
-
-
-
+mu_text = input()
+palindrome(mu_text)
 
 
 
