@@ -673,8 +673,132 @@
 #         print(val)
 #         break
 #     break
+#
+# Объектно-ориентированное (ОО) программирование
+#
+# + инкапсуляция это возможность скрыть внутренее устройство обьекта его данные и предостовлять доступ к ним
+# + множество экземпляров класс служет шаблоном по которому можно создавать любое количество объектов
+# + наследование можно создавать новые классы на основе уже существующих
+# + полиморфизм способность функции и методов работать с объектами разных классов если они подерживают необходимый интерфейс
+# обьект это конкретный экзепляр класса обладающии характеристиками описаный в классе, возвращает свойства и поведения предусмотреные классом
+#
+#
+# stack_list =[]
+#
+# def push(val):
+#     stack_list.append(val)
+#
+# def pop():
+#     print(stack_list)
+#     val = stack_list[-1]
+#     stack_list.pop()
+#     return val
+#
+# push(3)
+# push(5)
+# push(10)
+# print(stack_list)
+# print(pop())
+# print(stack_list)
+#
+# class SimpleClass:
+#     pass
+#
+# my_first_object = SimpleClass()
+# print(my_first_object)
+#
+# class Stack:
+#     counter = 0
+#
+#     def __int__(self):
+#         Stack.counter += 1
+#         self.__stack_list = []
+#         self.first = 1
+#
+#     def push(self, val):
+#         self.__stack_list.append(val)
+#
+#     def pop(self):
+#         print(self.__stack_list)
+#         val = self.__stack_list[-1]
+#         self.__stack_list.pop()
+#         return val
+#
+#     def set_second(self):
+#         self.second = 2
+#
+# stack_obj = Stack()
+# print(f"Экземпляр класса {stack_obj} имеет переменные: ", stack_obj.__dict__)
+# stack_obj.set_second()
+# print(f"Экземпляр класса {stack_obj} имеет переменные: ", stack_obj.__dict__)
+#
+# print(getattr(stack_obj, "first"))
+# print(stack_obj.__dict__)
+#
+# stack_obj_1 = Stack()
+# print(f"Экземпляр класса {stack_obj_1} имеет переменные: ", stack_obj.__dict__)
+# print("Всего создано объектов:", Stack.counter)
+# stack_obj.push(3)
+# stack_obj.push(156)
+# stack_obj.push(734)
+# print(stack_obj.pop())
+
+# stack_obj_2.push(100)
+# print(stack_obj_2.pop())
+
+# stack_obj.stack_list.append(100)
+# print(stack_obj.__int__)
+#
+# свойство обьектов, методы, атрибуты и наследование
+# атрибуты экземпляра это свойство сопуствующему обьекту
+# переманя класса это атрибуты пренадлежащему саму обьекту
+# переманя класса это атрибуты пренаджлежащие саму классу а не отдельно самому классу
+#
+# наследование классов это способ получить все атрибуты и методы базового (родительского) класса под классу(дочернему классу)
+# под класс это который расширяет и кторый уточняет функциональность под класса
+# класс от которого наследуется называется супер клас а следуйщий который наследует под класс
+
+# class SuperClass:
+#     pass
+# class SubClass(SuperClass):
+#     pass
+
+class Animal:
+    def __int__(self):
+        self.can_breathe = True
+        self.average_age = 20
+        self.animal_sound = " "
+
+    def get_animal_info(self):
+        print(f"Base info: все животные дышат: {self.can_breathe}, их средний возраст равен: {self.average_age}.")
+
+class Mammals(Animal):
+    def __int__(self, eyes_count = 2):
+        super().__int__()
+        self.feet_count = 4
+        self.eyes_count = 2
+
+class Cats(Mammals):
+    def __int__(self, eyes_count=2):
+        super().__int__(eyes_count=eyes_count)
+        self.name = "Musa"
+        self.animal_sound = "meow"
+
+    def get_cat_info(self):
+        self.get_animal_info()
+        print(f"Кошку зовут: {self.name}, она имеет {self.eyes_count} глаз, у нее {self.feet_count} ноги")
+
+    # def get_cat_info(self):
+    #     print(f"Коты имеют: {self.feet_count} ног, издают звук: {self.animal_sound}, меют количество глаз равное: {self.eyes_count}"
+    #           f"В среднем живут {self.average_age} лет")
 
 
+cat_masha = Cats(eyes_count=1, name="Masha")
+cat_masha.get_cat_info()
 
-
-
+cat_barsik = Cats(eyes_count=2, name="Barsik")
+cat_barsik.get_cat_info()
+# cats = Cats()
+# cats.get_cat_info()
+# mammals = Mammals
+# print(mammals.__dict__)
