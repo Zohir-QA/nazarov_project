@@ -762,43 +762,52 @@
 #     pass
 # class SubClass(SuperClass):
 #     pass
-
-class Animal:
-    def __int__(self):
-        self.can_breathe = True
-        self.average_age = 20
-        self.animal_sound = " "
-
-    def get_animal_info(self):
-        print(f"Base info: все животные дышат: {self.can_breathe}, их средний возраст равен: {self.average_age}.")
-
-class Mammals(Animal):
-    def __int__(self, eyes_count = 2):
-        super().__int__()
-        self.feet_count = 4
-        self.eyes_count = 2
-
-class Cats(Mammals):
-    def __int__(self, eyes_count=2):
-        super().__int__(eyes_count=eyes_count)
-        self.name = "Musa"
-        self.animal_sound = "meow"
-
-    def get_cat_info(self):
-        self.get_animal_info()
-        print(f"Кошку зовут: {self.name}, она имеет {self.eyes_count} глаз, у нее {self.feet_count} ноги")
-
-    # def get_cat_info(self):
-    #     print(f"Коты имеют: {self.feet_count} ног, издают звук: {self.animal_sound}, меют количество глаз равное: {self.eyes_count}"
-    #           f"В среднем живут {self.average_age} лет")
-
-
-cat_masha = Cats(eyes_count=1, name="Masha")
-cat_masha.get_cat_info()
-
-cat_barsik = Cats(eyes_count=2, name="Barsik")
-cat_barsik.get_cat_info()
+#
+# class Animal:
+#     def __int__(self):
+#         self.can_breathe = True
+#         self.average_age = 20
+#         self.animal_sound = " "
+#
+#     def get_animal_info(self):
+#         print(f"Base info: все животные дышат: {self.can_breathe}, их средний возраст равен: {self.average_age}.")
+#
+# class Mammals(Animal):
+#     def __int__(self, eyes_count = 2):
+#         super().__int__()
+#         self.feet_count = 4
+#         self.eyes_count = 2
+#
+# class Cats(Mammals):
+#     def __int__(self, eyes_count=2):
+#         super().__int__(eyes_count=eyes_count)
+#         self.name = "Musa"
+#         self.animal_sound = "meow"
+#
+#     def get_cat_info(self):
+#         self.get_animal_info()
+#         print(f"Кошку зовут: {self.name}, она имеет {self.eyes_count} глаз, у нее {self.feet_count} ноги")
+#
+#     # def get_cat_info(self):
+#     #     print(f"Коты имеют: {self.feet_count} ног, издают звук: {self.animal_sound}, меют количество глаз равное: {self.eyes_count}"
+#     #           f"В среднем живут {self.average_age} лет")
+#
+#
+# cat_masha = Cats(eyes_count=1, name="Masha")
+# cat_masha.get_cat_info()
+#
+# cat_barsik = Cats(eyes_count=2, name="Barsik")
+# cat_barsik.get_cat_info()
 # cats = Cats()
 # cats.get_cat_info()
 # mammals = Mammals
 # print(mammals.__dict__)
+
+
+
+
+
+
+
+
+
