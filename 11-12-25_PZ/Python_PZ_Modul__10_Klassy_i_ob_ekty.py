@@ -119,3 +119,63 @@
 # get_person_country()
 #
 # 4
+
+class Fraction:
+    def __init__(self, numerator, denominator, numerator_1, denominator_2):
+        self.numerator = numerator
+        self.denominator = denominator
+        self.numerator_1 = numerator_1
+        self.denominator_2 = denominator_2
+
+    def get_info_fraction(self):
+        info = (f"Числитель = {self.numerator} \n"
+                f"Знаменатель = {self.denominator}")
+        print(info)
+
+    def fraction(self):
+        number_1 = self.numerator
+        number_2 = self.denominator
+        val = round(number_1 / number_2, 1)
+        return val
+
+    def fraction_my(self):
+        number_1 = self.numerator_1
+        number_2 = self.denominator_2
+        val = round(number_1 / number_2, 1)
+        return val
+
+    def plus(self):
+        number_1 = self.fraction()
+        number_2 = self.fraction_my()
+        val = number_1 + number_2
+        print(f"Плюс = {val}")
+
+    def minus(self):
+        number_1 = self.fraction()
+        number_2 = self.fraction_my()
+        val = number_1 - number_2
+        print(f"Минус = {val}")
+
+    def multiplication(self):
+        number_1 = self.fraction()
+        number_2 = self.fraction_my()
+        val = number_1 * number_2
+        print(f"Умножение = {val}")
+
+    def division(self):
+        number_1 = self.fraction()
+        number_2 = self.fraction_my()
+        val = number_1 / number_2
+        print(f"Деление = {val}")
+
+def get_person_country():
+    fraction = Fraction(numerator=1, denominator=3, numerator_1=5, denominator_2=2)
+    fraction.get_info_fraction()
+    print(f"Дробь = {fraction.fraction()}")
+    print(f"Дробь 2 = {fraction.fraction_my()}")
+    fraction.plus()
+    fraction.minus()
+    fraction.multiplication()
+    fraction.division()
+
+get_person_country()
