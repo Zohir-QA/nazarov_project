@@ -51,11 +51,69 @@
 # get_person()
 
 # 2
-class СountingGeometric:
-    Geometric_count = 0
-    def __init__(self):
-        СountingGeometric.Geometric_count += 1
+# class CountingGeometric:
+#     geometric_count = 0
+#     def __init__(self):
+#         CountingGeometric.geometric_count += 1
+#
+#     @staticmethod
+#     def area_rectangle(a, b):
+#         S = a * b
+#         return S
+#
+#     @staticmethod
+#     def area_square(a):
+#         S = a * a
+#         return S
+#
+#     @staticmethod
+#     def area_rhombus(a, h):
+#         S = a * h
+#         return S
+#
+#     @staticmethod
+#     def area_triangle(a, h):
+#         S = (a * h) / 2
+#         return S
+#
+#     @staticmethod
+#     def counter():
+#         return CountingGeometric.geometric_count
+#
+# print(f"Площадь прямоугольника - {CountingGeometric.area_rectangle(15, 5)}")
+# print(f"Площадь квадрата - {CountingGeometric.area_square(15)}")
+# print(f"Площадь ромба - {CountingGeometric.area_rhombus(15, 20)}")
+# print(f"Площадь треугольника - {CountingGeometric.area_triangle(50, 80)}")
+# 3
+class Math:
+    @staticmethod
+    def max(a, b, c, d):
+        number = [a, b, c, d]
+        number_max = max(number)
+        return number_max
 
     @staticmethod
-    def area(self):
+    def min(a, b, c, d):
+        number = [a, b, c, d]
+        number_max = min(number)
+        return number_max
+
+    @staticmethod
+    def average(a, b, c, d):
+        number = [a, b, c, d]
+        number_max = sum(number) / len(number)
+        return number_max
+
+    @staticmethod
+    def factorial(a):
+        number = 1
+        for i in range(1, a+1):
+            number *= i
+        return number
+
+print(f"Максимум из четырех - {Math.max(1, 5, 9, 6)}")
+print(f"Минимум из четырех - {Math.min(1, 5, 9, 6)}")
+print(f"Cреднеарифметическое из четырех - {Math.average(1, 5, 9, 6)}")
+print(f"Факториал - {Math.factorial(3)}")
+
 
