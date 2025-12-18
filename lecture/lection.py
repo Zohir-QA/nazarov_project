@@ -534,6 +534,7 @@
 # pattern = re.compile(r"(\+7|8)\d{10}")
 # val = re.findall(pattern, text_1)
 # print(val)
+from pygame.examples.music_drop_fade import music_file_list
 
 # | - или пример 7|8
 # () - группирующие скобки позволяют сгруппировать или объединить несколько выражении
@@ -803,11 +804,59 @@
 # mammals = Mammals
 # print(mammals.__dict__)
 
+# работа со словарями
+# - изменяемая структура данных
+age_of_names = {"Alice": 15}
+# my_dict_1 = dict(Alice=15, Bob=55)
+my_dict_1 = dict([("Alice", 15), ("Pavel", 32), ("Zohir", 28)])
+empty_dict = {}
 
+# my_list = ["Alice", "Bob", "Irina", "Pavel"]
+# empty_dict = empty_dict.fromkeys(my_list, None)\
+# name = "Alic"
+# age_of_names[name] = 30
+# print(name in age_of_names)
+#
+# print(empty_dict)
+#
+# print(age_of_names, my_dict_1)
+#
+# for key, val in my_dict_1.items():
+#     print(f"{key} - {val}")
 
+# получение какого значения слова по ключу
+# value = my_dict_1.get("Pavel")
+# print(value)
 
+keys = my_dict_1.keys()
+# возращает специальный обьект из словаря
 
+values  = my_dict_1.values()
 
+items = my_dict_1.items()
 
+age_of_names.update(my_dict_1)
+print(age_of_names)
 
+# удаление ключей из словаря
+# age_of_names.pop("Alice", None)
+# print(age_of_names)
 
+val = age_of_names.popitem()
+# print(val)
+
+# age_of_names.clear()
+
+copy_dict = age_of_names.copy()
+
+students = {
+    "Alice": {
+        "age": 15, "last_name": "w423", "courses": ["math", "biology"]
+    },
+    "Bob":{
+        "age": 19, "last_name": "w423", "courses": ["math", "biology"]
+    }
+}
+
+students["Alice"]["courses"].append("english")
+print(students["Alice"]["courses"])
