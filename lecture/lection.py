@@ -794,7 +794,7 @@ from pygame.examples.music_drop_fade import music_file_list
 #     #           f"В среднем живут {self.average_age} лет")
 #
 #
-# cat_masha = Cats(eyes_count=1, name="Masha")
+# cat_masha = Cats()
 # cat_masha.get_cat_info()
 #
 # cat_barsik = Cats(eyes_count=2, name="Barsik")
