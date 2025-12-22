@@ -534,7 +534,7 @@
 # pattern = re.compile(r"(\+7|8)\d{10}")
 # val = re.findall(pattern, text_1)
 # print(val)
-from pygame.examples.music_drop_fade import music_file_list
+# from pygame.examples.music_drop_fade import music_file_list
 
 # | - или пример 7|8
 # () - группирующие скобки позволяют сгруппировать или объединить несколько выражении
@@ -827,36 +827,50 @@ empty_dict = {}
 # получение какого значения слова по ключу
 # value = my_dict_1.get("Pavel")
 # print(value)
-
-keys = my_dict_1.keys()
-# возращает специальный обьект из словаря
-
-values  = my_dict_1.values()
-
-items = my_dict_1.items()
-
-age_of_names.update(my_dict_1)
-print(age_of_names)
-
-# удаление ключей из словаря
-# age_of_names.pop("Alice", None)
+#
+# keys = my_dict_1.keys()
+# # возращает специальный обьект из словаря
+#
+# values  = my_dict_1.values()
+#
+# items = my_dict_1.items()
+#
+# age_of_names.update(my_dict_1)
 # print(age_of_names)
+#
+# # удаление ключей из словаря
+# # age_of_names.pop("Alice", None)
+# # print(age_of_names)
+#
+# val = age_of_names.popitem()
+# # print(val)
+#
+# # age_of_names.clear()
+#
+# copy_dict = age_of_names.copy()
+#
+# students = {
+#     "Alice": {
+#         "age": 15, "last_name": "w423", "courses": ["math", "biology"]
+#     },
+#     "Bob":{
+#         "age": 19, "last_name": "w423", "courses": ["math", "biology"]
+#     }
+# }
+#
+# students["Alice"]["courses"].append("english")
+# print(students["Alice"]["courses"])
 
-val = age_of_names.popitem()
-# print(val)
+class A:
+    def method(self):
+        print("A")
 
-# age_of_names.clear()
+class B:
+    def method(self):
+        print("B")
 
-copy_dict = age_of_names.copy()
+class C(A, B):
+    pass
 
-students = {
-    "Alice": {
-        "age": 15, "last_name": "w423", "courses": ["math", "biology"]
-    },
-    "Bob":{
-        "age": 19, "last_name": "w423", "courses": ["math", "biology"]
-    }
-}
-
-students["Alice"]["courses"].append("english")
-print(students["Alice"]["courses"])
+c = C()
+print(C.__mro__)
