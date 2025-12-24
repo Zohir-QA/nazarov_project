@@ -182,3 +182,45 @@ class Crocodile(Animal):
     def __init__(self):
         super().__init__()
         self.length = ""
+        self.skin_type = ""
+
+    def get_info_crocodile(self):
+        info = (f"Длина = {self.length} \n"
+                f"Тип кожи = {self.skin_type} \n"
+                f"{self.get_info_animal()}")
+        print(info)
+
+    def set_length(self, length):
+        self.length = length
+
+    def set_skin_type(self, skin_type):
+        self.skin_type = skin_type
+
+class Kangaroo(Animal):
+    def __init__(self):
+        super().__init__()
+        self.jump_distance = ""
+        self.pouch_size = ""
+
+    def get_info_kangaroo(self):
+        info = (f"Длина прыжка = {self.jump_distance} \n"
+                f"Размер сумки = {self.pouch_size} \n"
+                f"{self.get_info_animal()}")
+        print(info)
+
+    def set_jump_distance(self, jump_distance):
+        self.jump_distance = jump_distance
+
+    def set_pouch_size(self, pouch_size):
+        self.pouch_size = pouch_size
+
+def get_crocodile():
+    crocodile = Crocodile()
+    crocodile.set_length("50")
+    crocodile.set_skin_type("гребнистый")
+    crocodile.set_name("Saltwater")
+    crocodile.set_sound("шипение")
+    crocodile.set_diet("рыбой")
+    crocodile.get_info_crocodile()
+
+get_crocodile()
