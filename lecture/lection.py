@@ -860,17 +860,64 @@ empty_dict = {}
 #
 # students["Alice"]["courses"].append("english")
 # print(students["Alice"]["courses"])
+#
+# class A:
+#     def method(self):
+#         print("A")
+#
+# class B:
+#     def method(self):
+#         print("B")
+#
+# class C(A, B):
+#     pass
+#
+# c = C()
+# print(C.__mro__)
 
-class A:
-    def method(self):
-        print("A")
+# магические методы
 
-class B:
-    def method(self):
-        print("B")
+class Books:
+    def __init__(self, book, author): #
+        self.book = book
+        self.author = author
 
-class C(A, B):
-    pass
+    # def __str__(self):#
+    #     return (f"Автор: {self.author}"
+    #             f"Год: {self.year}")
 
-c = C()
-print(C.__mro__)
+    # def __repr__(self):
+    #     return (f"Автор: {self.author}"
+    #             f"Год: {self.year}"
+    #             f"{Book.__dict__}")
+
+    # def __len__(self):
+    #     return len(self)
+
+    # def __eq__(self, other):
+    #     if isinstance(other, Books):
+    #         return self.book ==other.book and self.author == other
+
+    # def add_books(self, book_name, author):
+    #     self.books[book_name] = author
+    #     return self.books
+
+# my_librrary = Books(books={"oruell_1984": "Oruell",
+#                       "Трое из леса": "Никитин"})
+
+game_of_thrones = Books(book="Игра престолов", author="Джорд Мартин")
+
+other_book =Books(book="Игра престолов", author="Джорд Мартин")
+
+print(game_of_thrones, other_book)
+
+print(game_of_thrones == other_book)
+
+# str()
+# print(oruell)
+# print(len(my_librrary))
+# a = repr(oruell)
+# print(a)
+
+
+
