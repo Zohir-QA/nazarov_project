@@ -76,56 +76,105 @@
 #
 # get_car()
 # 3
-class Animal:
-    def __init__(self):
-        self.show = ""
-        self.sound = ""
-        self.type = ""
+# class Animal:
+#     def __init__(self):
+#         self.show = ""
+#         self.sound = ""
+#         self.type = ""
+#
+#     def set_show(self, show):
+#         self.show = show
+#
+#     def set_sound(self, sound):
+#         self.sound = sound
+#
+#     def set_type(self, type):
+#         self.type = type
+#
+#     def get_info_animal(self):
+#         print(f"{self.show} издает звук: {self.sound}. Подвид {self.type}")
+#
+# class Dog(Animal):
+#     def __init__(self):
+#         super().__init__()
+#         self.show = "Рекс"
+#         self.sound = "гаф-гаф"
+#         self.type = "охотничья"
+#
+# class Cat(Animal):
+#     def __init__(self):
+#         super().__init__()
+#         self.show = "Мурка"
+#         self.sound = "мяу"
+#         self.type = "сиамская"
+#
+# class Parrot(Animal):
+#     def __init__(self):
+#         super().__init__()
+#         self.show = "Кеша"
+#         self.sound = "за Императора!"
+#         self.type = "королевский"
+#
+# class Hamster(Animal):
+#     def __init__(self):
+#         super().__init__()
+#         self.show = "Пушистик"
+#         self.sound = "пи-пи-пи"
+#         self.type = "джунгарский"
+#
+# def get_home_animal():
+#     animal = Parrot()
+#     animal.get_info_animal()
+# get_home_animal()
+# 4 и 5
+class Employer:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    def set_show(self, show):
-        self.show = show
+    def print(self):
+        print("This is Employer class")
 
-    def set_sound(self, sound):
-        self.sound = sound
+    def __str__(self):
+        return f"Employer: {self.name}"
 
-    def set_type(self, type):
-        self.type = type
+    def __int__(self):
+        return self.age
 
-    def get_info_animal(self):
-        print(f"{self.show} издает звук: {self.sound}. Подвид {self.type}")
+class President(Employer):
+    def print(self):
+        print(f"This is President: {self.name}")
 
-class Dog(Animal):
-    def __init__(self):
-        super().__init__()
-        self.show = "Рекс"
-        self.sound = "гаф-гаф"
-        self.type = "охотничья"
-
-class Cat(Animal):
-    def __init__(self):
-        super().__init__()
-        self.show = "Мурка"
-        self.sound = "мяу"
-        self.type = "сиамская"
-
-class Parrot(Animal):
-    def __init__(self):
-        super().__init__()
-        self.show = "Кеша"
-        self.sound = "за Императора!"
-        self.type = "королевский"
-
-class Hamster(Animal):
-    def __init__(self):
-        super().__init__()
-        self.show = "Пушистик"
-        self.sound = "пи-пи-пи"
-        self.type = "джунгарский"
+    def __str__(self):
+        return f"President: {self.name}, age: {self.age}"
 
 
-def get_home_animal():
-    animal = Parrot()
-    animal.get_info_animal()
-get_home_animal()
+class Manager(Employer):
+    def print(self):
+        print(f"This is Manager: {self.name}")
+
+    def __str__(self):
+        return f"Manager: {self.name}, age: {self.age}"
 
 
+class Worker(Employer):
+    def print(self):
+        print(f"This is Worker: {self.name}")
+
+    def __str__(self):
+        return f"Worker: {self.name}, age: {self.age}"
+
+emp1 = Employer("John Doe", 45)
+pres1 = President("Иван Иванов", 55)
+man1 = Manager("Петр Петров", 40)
+work1 = Worker("Анна Сидорова", 35)
+
+emp1.print()
+pres1.print()
+man1.print()
+work1.print()
+
+print(f"\nВозраст работника: {int(emp1)}")
+print(f"Возраст президента: {int(pres1)}")
+print(f"Возраст менеджера: {int(man1)}")
+print(f"Возраст рабочего: {int(work1)}")
