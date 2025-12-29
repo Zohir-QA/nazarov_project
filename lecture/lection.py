@@ -877,10 +877,10 @@ empty_dict = {}
 
 # магические методы
 
-class Books:
-    def __init__(self, book, author): #
-        self.book = book
-        self.author = author
+# class Books:
+#     def __init__(self, book, author): #
+#         self.book = book
+#         self.author = author
 
     # def __str__(self):#
     #     return (f"Автор: {self.author}"
@@ -905,19 +905,21 @@ class Books:
 # my_librrary = Books(books={"oruell_1984": "Oruell",
 #                       "Трое из леса": "Никитин"})
 
-game_of_thrones = Books(book="Игра престолов", author="Джорд Мартин")
-
-other_book =Books(book="Игра престолов", author="Джорд Мартин")
-
-print(game_of_thrones, other_book)
-
-print(game_of_thrones == other_book)
+# game_of_thrones = Books(book="Игра престолов", author="Джорд Мартин")
+#
+# other_book =Books(book="Игра престолов", author="Джорд Мартин")
+#
+# print(game_of_thrones, other_book)
+#
+# print(game_of_thrones == other_book)
 
 # str()
 # print(oruell)
 # print(len(my_librrary))
 # a = repr(oruell)
 # print(a)
+# Qwen3-Max
+# https://claude.ai/
 
 
 
