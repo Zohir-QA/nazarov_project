@@ -57,18 +57,6 @@ class UserProfile:
             print(f"Ошибка установки email: {e}")
             return False
 
-        # count = 0
-        # for i in range(0, len(email)):
-        #     if email[i] == "@" or email[i] == ".":
-        #         count += 1
-        # try:
-        #     if count == 2:
-        #         self.__email = email
-        #     else:
-        #         raise Exception
-        # except Exception:
-        #         print("Неверный адрес электронной почты.")
-
     def set_age(self, age: int):
         try:
             if age < 13 or age > 120:
